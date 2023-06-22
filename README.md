@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### N.B.
-This project might not be fit with the test requirements, I've been caught up by my thesis final exam. I choose the fastest way to build this app. Here it's the best I can do in a day. Regardless of the framework I used, It will be a lot for me if at least you can review my code, Thanks.
+This project might not be fit with the test requirements. I've been caught up by my thesis final exam. I choose the fastest way to build this app. Here it's the best I can do in a day. Regardless of the framework I used, It will be a lot for me if at least you can review my code, Thanks.
 
 ## Available Scripts
 
