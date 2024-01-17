@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mealapp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/global.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class='flex justify-between px-12 py-3 bg-white shadow-md w-full z-20'>
+    <a class='font-black text-lg tracking-widest uppercase' href="/"><span class="text-red-600">Meal</span>App</a>
+    <div class='flex flex-row space-x-7 font-semibold'>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 block sm:hidden text-red-600">
+        <path fillRule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm8.25 5.25a.75.75 0 01.75-.75h8.25a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75z" clipRule="evenodd" />
+      </svg>
+      <p class='hidden sm:block'>Home</p>
+      <p class='hidden sm:block'>Feeds</p>
+      <p class='hidden sm:block'>Ingredients</p>
+      <p class='hidden sm:block'>Local Culinary</p>
+    </div>
+  </nav>
+  
+  <!-- Main -->
+  <div class="category min-h-screen">
+    <div class='w-[77%] mx-auto'>
+      <h2 id="title-category" class='font-bold text-3xl sm:text-4xl mt-12 mb-4'></h2>
+      <div class="flex flex-row items-center gap-2">
+        <a href="/" class="font-semibold max-sm:text-xs flex flex-row gap-1" >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 sm:w-5 h-4 sm:h-5 text-red-600">
+            <path d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z" />
+            <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z" />
+          </svg>
+          <p>Home</p>
+        </a>
+        <p class="font-semibold max-sm:text-xs">/</p>
+        <p id="nav-category" class="font-bold max-sm:text-xs"></p>
+      </div>
+      <h2 id="slogan-category" class="my-8 font-semibold text-center text-xl sm:text-2xl"></h2>
+      <div id="data" class='flex flex-wrap gap-8 justify-center'>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

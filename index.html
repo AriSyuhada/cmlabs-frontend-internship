@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mealapp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/global.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class='flex justify-between px-12 py-3 bg-white shadow-md w-full z-20'>
+      <a class='font-black text-lg tracking-widest uppercase' href="/"><span class="text-red-600">Meal</span>App</a>
+      <div class='flex flex-row space-x-7 font-semibold'>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8 block sm:hidden text-red-600">
+              <path fillRule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm8.25 5.25a.75.75 0 01.75-.75h8.25a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75z" clipRule="evenodd" />
+          </svg>
+          <p class='hidden sm:block'>Home</p>
+          <p class='hidden sm:block'>Feeds</p>
+          <p class='hidden sm:block'>Ingredients</p>
+          <p class='hidden sm:block'>Local Culinary</p>
+      </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="text-center min-h-screen">
+    <div class='flex flex-row bg-white py-16 shadow-lg'>
+      <div class="flex flex-col gap-6 lg:basis-3/5 text-start px-16">
+        <h1 class="text-3xl sm:text-4xl font-bold">Savor Every Bite, Explore Endless Delights<br /><span class="text-2xl sm:text-3xl text-red-600">Your Culinary Journey Begins Here!</span></h1>
+        <p class="sm:text-lg">Welcome to our culinary haven, where taste meets innovation! Our food menu website is a gastronomic delight, offering a diverse range of flavors to tantalize your taste buds. From delectable appetizers to mouthwatering mains and tempting desserts, we curate a symphony of tastes to satisfy every craving.</p>
+      </div>
+      <div class="hidden lg:flex flex-col justify-center items-center px-4 lg:basis-2/5">
+        <img class="w-[23.438rem]" src="/assets/cooking_illustration.svg" alt="cooking-illustraton" />
+      </div>
+    </div>
+    <div class='py-16 px-8 flex flex-col items-center'>
+      <h2 class="text-2xl sm:text-3xl font-bold mt-16 mb-4 text-red-600">Pick Any Category You Want</h2>
+      <h3 class="text-xl sm:text-2xl font-semibold mb-16 max-w-[90%] sm:max-w-[60%]">Indulge in Culinary Bliss: Explore Our Exquisite Special Recipes, Expertly Grouped by Category for Your Ultimate Gastronomic Adventure!</h3>
+      <div id="data" class='flex flex-wrap gap-8 justify-center'>
+      </div>
+    </div>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
